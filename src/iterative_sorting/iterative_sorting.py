@@ -27,14 +27,10 @@ def bubble_sort(arr):
     for i in range(len(arr) -1, 0, -1):
         # iterate within that set range
         for j in range(i):
-            # compare current index [j] to the
+            # compare current index [j] to the item to its right
             if arr[j] > arr[j + 1]:
+                # if [j] is larger, then swap
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
-
-                # for i in range(0, len(array) - 1):
-                #     for j in range(0, len(array) - 2):
-                #         if array[i] > array[i + 1]:
-                #             array[i], array[i + 1] = array[i + 1], array[i]
 #
     return arr
 
