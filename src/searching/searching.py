@@ -1,9 +1,14 @@
 def linear_search(arr, target):
     # Your code here
-    pass
+    # iterate over array,
+    for i in range( 0, len(arr) ):
+        # if target is equal to index [i]
+        if target == arr[i]:
+            # return index
+            return i
 
 
-#     return -1   # not found
+    return -1   # not found
 
 
 # Write an iterative implementation of Binary Search
